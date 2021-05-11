@@ -199,3 +199,77 @@ contact
     color: var(--crvena);
     font-size: 2rem;
 }
+
+/*****************
+RESPONSIVE
+*****************/
+@media (max-width: 1199px) {
+    .about p {
+        padding: 10px 0;
+    }
+    .gallery button {
+        margin: 200px 0 0;
+    }
+    .contact form {
+        width: 80%;
+    }
+}
+@media (max-width: 991px) {
+    .about article .wrapper div {
+        flex: 0 0 100%;
+    }
+    .about article .wrapper div:last-child {
+        padding: 50px;
+    }
+    .about article .wrapper:nth-child(even) div:first-child {
+        order: 0;
+    }
+    .gallery article {
+        margin-bottom: 0px;
+    }
+    .gallery article div {
+        flex: 0 0 47%;
+        margin-bottom: 30px;
+    }
+    .gallery button {
+        margin-top: 80px;
+    }
+    .gallery img:hover {
+        transform: unset;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+    header {
+        height: 75vh;
+    }
+    header h1 {
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
+    .about, .gallery, .contact {
+        padding: 60px 0;
+    }
+    .about article .wrapper div:last-child {
+        padding-top: 25px;
+    }
+    .gallery article div {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    .gallery button {
+        margin-top: 30px;
+    }
+    .contact form {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .contact form input {
+        margin-bottom: 40px;
+    }
+}
