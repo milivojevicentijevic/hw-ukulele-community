@@ -45,6 +45,9 @@ button:hover {
     margin: auto;
     /* border: 1px solid black; */
 }
+.about, .gallery {
+    padding: 80px 0;
+}
 /*****************
 header
 *****************/
@@ -75,7 +78,6 @@ about
 *****************/
 .about {
     background-color: var(--svetlosiva);
-    padding: 80px 0;
 }
 .about article .wrapper {
     display: flex;
@@ -110,4 +112,90 @@ about
 }
 .about article .wrapper:nth-child(even) div:first-child {
     order: 1;
+}
+/*****************
+gallery
+*****************/
+.gallery {
+    text-align: center;
+}
+.gallery h2 {
+    font-size: 3rem;
+    color: var(--crvena);
+    margin-bottom: 50px;
+}
+.gallery img {
+    width: 100%;
+    transition: var(--transition);
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.gallery article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.gallery article div {
+    flex: 0 0 21.7%;
+}
+.gallery button {
+    margin: 400px 0 80px;
+}
+/*****************
+contact
+*****************/
+.contact {
+    background-color: var(--crvena);
+    text-align: center;
+    padding: 70px 0;
+}
+.contact h2 {
+    color: var(--crna);
+    font-size: 2.6rem;
+}
+.contact form {
+    width: 50%;
+    margin: 40px auto 50px;
+    display: flex;
+    flex-direction: column;
+}
+.contact form label {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 0 0 6px 10px;
+}
+.contact form input,
+.contact form textarea {
+    padding: 12px;
+    border: 2px solid var(--svetlosiva);
+    background: linear-gradient(rgba(255, 255, 255,.3),rgba(255, 255, 255,.3));
+    outline: none;
+    color: var(--crna);
+    margin-bottom: 60px;
+    font-size: 1.1rem;
+}
+.contact form textarea {
+    font-family: 'Nunito', sans-serif;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #af7878;
+    letter-spacing: 1px;
+}
+.contact div {
+    display: inline-block;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    background-color: var(--bela);
+    line-height: 84px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+.contact a i {
+    color: var(--crvena);
+    font-size: 2rem;
 }
